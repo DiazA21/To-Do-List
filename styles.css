@@ -1,17 +1,17 @@
 /* Variable Colours */
 :root {
-    --primary: #ea40a4;
-    --business: #3a82ee;
-    --personal:var(--primary);
+    --primary: #3a82ee;
+    --business: #FFD166;
+    --personal:#06D6A0;
     --light: #eee;
     --grey: #888;
     --dark: #313154;
     --danger: #ff5b57;
-
+    
     --shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 
-    --business-glow: 0px px 4px rgba(rgb(58, 130, 238, 0.75));
-    --personal-glow: 0px px 4px rgba(rgb(234, 64, 164, 0.75));
+    --business-glow: 0px px 4px rgba(rgba(58, 130, 238, 0.75));
+    --personal-glow: 0px px 4px rgba(rgba(234, 64, 164, 0.75));
 }
 
 /* Reset */
@@ -215,7 +215,7 @@ input:checked ~ .bubble::after { /* ~  = "next sibling" selector */
 
 .todo-item .actions button:hover {
     opacity: 0.75;
-}
+} 
 
 .todo-item .actions .edit {
     margin-right: 0.5rem;
