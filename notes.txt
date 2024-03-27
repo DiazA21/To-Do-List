@@ -1,9 +1,15 @@
 Amendments to project:
 
-Change colours - COMPLETE
-
-Todo list ordered by latest first
-
-Ensure that the add task field isn't empty and cannot be added unless filled
+Todo list ordered by latest first, but can be reordered by user with drag and drop
 
 If no category is selected then an alert will appear saying a category needs to be chosen
+
+User accounts to manage to-do lists. Need backend server and database.
+
+due dates and reminders via email or notifications.
+
+Search feature to filter tasks.
+
+Integration with other services, like Google Calendar for due dates etc.
+
+Dark mode
