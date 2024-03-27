@@ -231,4 +231,21 @@ input:checked ~ .bubble::after {
 .todo-item.done .todo-content input {
   text-decoration: line-through;
   color: var(--grey);
+
+}
+
+input[type="text"]:focus {
+  background-color: antiquewhite;
+  border: 3px solid var(--black);
+}
+
+.error-text {
+  display: none;
+  color: red;
+  font-size: 18px;
+}
+
+.error .error-text {
+  display: block;
+
 }

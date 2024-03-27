@@ -14,6 +14,13 @@ window.addEventListener('load', () => {
     newTodoForm.addEventListener('submit', e => {
         e.preventDefault();
 
+        if (input.value.trim() === '') {
+            errorText.style.display = 'block';
+            return;
+          }
+        
+          errorText.style.display = 'none';
+
         const todo = {
             content: e.target.elements.content.value,
             category: e.target.elements.category.value,
@@ -115,3 +122,19 @@ function DisplayTodos() {
         })
     })
 }
+
+// Error if blank
+
+const form = document.querySelector('.create-todo form');
+const input = form.querySelector('input[type="text"]');
+const errorText = document.querySelector('.error-text');
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  if (input.value.trim() === '') {
+    errorText.style.display = 'block';
+  } else {
+    errorText.style.display = 'none';
+  }
+});
